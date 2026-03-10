@@ -4,7 +4,6 @@ Para realizar los ejercicios de este tema y poder ejecutar los tests con las lib
 
 Si necesitas disponer de diferentes versiones de node en tu equipo, puedes usar [nvm](https://github.com/nvm-sh/nvm)
 
-
 ## 📝 Enunciados
 
 > 💡 Cada ejercicio deberás realizarlo en el fichero correspondiente, que estará ubicado en la carpeta de su unidad y con la nomenclatura **u[numero_unidad]e[numero_ejercicio].[tipo_fichero]**.
@@ -16,21 +15,20 @@ Además por cada ejercicio podrás encontrar **su enunciado** en la misma ubicac
 
 Las UNIDADES del TEMA actual (**1. Uso avanzado de funciones**) junto con los ejercicios son los siguientes:
 
-| UNIDAD | Enunciados | Ejercicios |
-| -------- | ---------- | ---------- |
-| 1. Funciones de retorno de llamada (callbacks)    | [u1e1](u1/u1e1.md) | [u1e1](u1/u1e1.js) |
-| 2. Métodos `reduce` y `forEach`                   | [u2e1](u2/u2e1.md) | [u2e1](u2/u2e1.js) |
-| 3. Promesas                                       | [u3e1](u3/u3e1.md) | [u3e1](u3/u3e1.js) |
-| 4. Asincronía y `await`                           | [u4e1](u4/u4e1.md) | [u4e1](u4/u4e1.js) |
-| 4. Closures                                       | [u5e1](u5/u5e1.md), [u5e2](u5/u5e2.md) | [u5e1](u5/u5e1.js), [u5e2](u5/u5e2.js) |
-| 5. Módulos                                        | [u6e1](u6/u6e1.md) | [u6e1](u6/u6e1.js) |
+| UNIDAD                                         | Enunciados                             | Ejercicios                             |
+| ---------------------------------------------- | -------------------------------------- | -------------------------------------- |
+| 1. Funciones de retorno de llamada (callbacks) | [u1e1](u1/u1e1.md)                     | [u1e1](u1/u1e1.js)                     |
+| 2. Métodos `reduce` y `forEach`                | [u2e1](u2/u2e1.md)                     | [u2e1](u2/u2e1.js)                     |
+| 3. Promesas                                    | [u3e1](u3/u3e1.md)                     | [u3e1](u3/u3e1.js)                     |
+| 4. Asincronía y `await`                        | [u4e1](u4/u4e1.md)                     | [u4e1](u4/u4e1.js)                     |
+| 4. Closures                                    | [u5e1](u5/u5e1.md), [u5e2](u5/u5e2.md) | [u5e1](u5/u5e1.js), [u5e2](u5/u5e2.js) |
+| 5. Módulos                                     | [u6e1](u6/u6e1.md)                     | [u6e1](u6/u6e1.js)                     |
 
 Además, cada ejercicio irá acompañado de uno o varios tests para comprobar que tu solución es correcta. En la sección [Cómo ejecutar los tests](#cómo-ejecutar-los-tests) describimos cómo puedes ejecutar los tests.
 
 Cuando hayas propuesto una implementación para la función, ejecuta los tests para ver si tu solución es correcta. Si no pasa los tests, vuelve a intentarlo revisando los errores que te comentan los tests.
 
 Una vez termines el ejercicio, deberás enviar tus cambios para que se registren en la plataforma y que puedan ser corregidos por tu profesor. En la sección [Entregar ejercicio](#entregar-ejercicio) describimos cómo has de enviar tu solución al ejercicio.
-
 
 ## 🛠️ Cómo ejecutar los tests
 
@@ -42,9 +40,9 @@ Como puedes esperar, la primera vez que ejecutes `npm t` y se lancen los tests, 
 
 Este es un ejemplo de una posible salida de error:
 
-```
+```text
 FAIL  src/u1e1.test.js
-  ● Callbacks › Callback execeuted...
+  ● Callbacks › Callback executed...
       expect(received).toBe(expected) // Object.is equality
 
       Expected: true
@@ -65,14 +63,13 @@ Es importante fijarse en la descripción del error, por ejemplo, el texto de err
 
 Una vez corregido el problema, en cuanto se guarda el fichero donde estamos editando los ejercicios, el test se vuelve a lanzar y nos mostraría:
 
-```
+```text
   PASS  src/u1e1.test.js
 ```
 
 Ahora el test muestra `PASS`.
 
 El comando de pruebas (en el Terminal) tiene un menú (accesible mediante la tecla `w`) que os permite ejecutar los tests selectivamente. Por ejemplo, pulsando `a` podéis relanzar manualmente todos los tests; y pulsando `f` podéis relanzar solamente aquellos tests que han fallado. Probad las diferentes opciones y si tenéis alguna duda, consultadla en el foro de la asignatura.
-
 
 ## 📦 Entregar ejercicio
 
@@ -82,17 +79,16 @@ Para entregar el ejercicio, sigue estos pasos. Ten en cuenta que estos pasos est
 
 2. Haz click en el icono de la extensión Git en la barra de menú izquierda, este es el icono:
 
-    ![Git](img/git.png)
+   ![Git](img/git.png)
 
 3. Haz click en el símbolo `+` para añadir el fichero que quieras enviar:
 
 4. Escribe un mensaje resumiendo tus cambios (por ejemplo, "Submitting exercise") y luego haz click en _Commit_
 
-    ![Commit](img/commit.png)
+   ![Commit](img/commit.png)
 
 5. Haz click en _Sync Changes_
 
-    ![SyncChanges](img/sync.png)
+   ![SyncChanges](img/sync.png)
 
 Tu ejercicio ya está entregado, el profesor podrá revisarlo si es necesario.
-

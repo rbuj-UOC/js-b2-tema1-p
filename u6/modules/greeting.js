@@ -1,21 +1,21 @@
-const GREET_TYPES = {
-    HI: 'hi',
-    BYE: 'bye'
+import basicEncrypt from './encrypt';
+
+export const GREET_TYPES = {
+  HI: 'hi',
+  BYE: 'bye'
+};
+
+export function sayHi(name) {
+  return encryptedGreeting(name, GREET_TYPES.HI);
 }
 
-function sayHi(name) {
-    return encryptedGreeting(name, GREET_TYPES.HI);
-}
-
-function sayBye(name) {
-    return encryptedGreeting(name, GREET_TYPES.BYE);
+export function sayBye(name) {
+  return encryptedGreeting(name, GREET_TYPES.BYE);
 }
 
 function encryptedGreeting(name, type) {
-
-    if (type === GREET_TYPES.HI) {
-        return basicEncrypt('Hi ' + name + '!');
-    }
-
-    return basicEncrypt('Bye ' + name + '!');
+  if (type === GREET_TYPES.HI) {
+    return basicEncrypt('Hi ' + name + '!');
+  }
+  return basicEncrypt('Bye ' + name + '!');
 }
